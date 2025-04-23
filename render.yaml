@@ -7,13 +7,13 @@ services:
     autoDeploy: false
     envVars:
       - key: MYSQL_DATABASE
-        value: mydb
+        value: learn
       - key: MYSQL_USER
-        value: myuser
+        value: ak
       - key: MYSQL_PASSWORD
-        value: mypassword
+        value: ak@123
       - key: MYSQL_ROOT_PASSWORD
-        value: rootpassword
+        value: akadmin@123
     ports:
       - port: 3306
         protocol: tcp
