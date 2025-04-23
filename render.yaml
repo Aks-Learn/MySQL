@@ -1,7 +1,19 @@
 services:
-  - type: private
-    name: learn-ak-learn
+  - type: web
+    name: mysql-db
     env: docker
     dockerfilePath: ./Dockerfile
     plan: standard
     autoDeploy: false
+    envVars:
+      - key: MYSQL_DATABASE
+        value: mydb
+      - key: MYSQL_USER
+        value: myuser
+      - key: MYSQL_PASSWORD
+        value: mypassword
+      - key: MYSQL_ROOT_PASSWORD
+        value: rootpassword
+    ports:
+      - port: 3306
+        protocol: tcp
