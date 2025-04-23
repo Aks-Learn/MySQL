@@ -1,0 +1,7 @@
+services:
+  - type: private
+    name: learn-ak-learn
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: standard
+    autoDeploy: false
